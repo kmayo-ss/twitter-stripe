@@ -1,0 +1,14 @@
+{
+    "name": "kmayo-ss/sstwitter",
+    "description": "Oauth connector for Twitter",
+    "authors": [
+        {
+            "name": "Kirk Mayo",
+            "email": "kirk@silverstripe.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "jublonet/codebird-php": "dev-master"
+    }
+}
