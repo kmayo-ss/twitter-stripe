@@ -1,5 +1,7 @@
 {
     "name": "kmayo-ss/sstwitter",
+    "type": "silverstripe-module",
+    "keywords": ["Twitter", "OAuth", "SilverStripe"],
     "description": "Oauth connector for Twitter",
     "authors": [
         {
