@@ -12,5 +12,11 @@
     "minimum-stability": "stable",
     "require": {
         "jublonet/codebird-php": "dev-master"
-    }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/jublonet/codebird-php.git"
+        }
+    ]
 }
