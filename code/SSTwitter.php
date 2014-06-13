@@ -6,7 +6,7 @@ require_once (dirname(dirname(__FILE__)) . '/vendor/jublonet/codebird-php/src/co
  * The SSTwitter class connects to Twitter API version 1.1 via OAuth
  * It can be used for fetching tweets from a users timeline 
  *
- * @package sstwitter
+ * @package twitter-stripe
  */
 class SSTwitter extends Object {
 

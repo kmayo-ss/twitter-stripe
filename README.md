@@ -22,7 +22,7 @@ It uses the Twitter library codebird-php (https://github.com/jublonet/codebird-p
 
  1. Download the module form GitHub (Composer support to be added)
  2. Extract the file (if you are on windows try 7-zip for extracting tar.gz files
- 3. Make sure the folder after being extracted is named 'sstwitter'
+ 3. Make sure the folder after being extracted is named 'twitter-stripe'
  4. Place this directory in your sites root directory. This is the one with framework and cms in it.
  5. Run in your browser - `/dev/build` to rebuild the database.
 
