@@ -1,6 +1,6 @@
 <?php
 
-require_once (dirname(dirname(__FILE__)) . '/vendor/jublonet/codebird-php/src/codebird.php');
+require_once (dirname(dirname(dirname(__FILE__))) . '/vendor/jublonet/codebird-php/src/codebird.php');
 
 /**
  * The SSTwitter class connects to Twitter API version 1.1 via OAuth
