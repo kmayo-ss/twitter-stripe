@@ -9,9 +9,8 @@
             "email": "kirk@silverstripe.com"
         }
     ],
-    "minimum-stability": "stable",
     "require": {
-        "jublonet/codebird-php": "master"
+        "jublonet/codebird-php": "2.4.*@develop"
     },
     "repositories": [
         {
