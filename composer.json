@@ -11,7 +11,7 @@
     ],
     "minimum-stability": "stable",
     "require": {
-        "jublonet/codebird-php": "dev-master"
+        "jublonet/codebird-php": "master"
     },
     "repositories": [
         {
