@@ -8,14 +8,5 @@
             "name": "Kirk Mayo",
             "email": "kirk@silverstripe.com"
         }
-    ],
-    "require": {
-        "jublonet/codebird-php": "2.4.*@develop"
-    },
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/jublonet/codebird-php.git"
-        }
     ]
 }
