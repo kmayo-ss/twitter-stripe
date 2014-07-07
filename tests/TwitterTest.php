@@ -12,11 +12,11 @@ class TwitterTest extends FunctionalTest {
 
 	private $cb;
 
-	private static $consumerKey = 'consumerkeypass';
-	private static $consumerSecret = 'consumerecretpass';
-	private static $oauthToken = 'oauthtokenpass';
-	private static $oauthSecret = 'oauthsecretpass';
-	private static $twitterScreenName = 'twitterScreenname';
+	public static $consumerKey = 'consumerkeypass';
+	public static $consumerSecret = 'consumerecretpass';
+	public static $oauthToken = 'oauthtokenpass';
+	public static $oauthSecret = 'oauthsecretpass';
+	static $twitterScreenName = 'twitterScreenname';
 
 	public function setup() {
 		Config::inst()->update('SSTwitter', 'CONSUMER_KEY', self::$consumerKey);
@@ -32,16 +32,16 @@ class TwitterTest extends FunctionalTest {
 
 	public function testCodebird() {
 		$twitter = $this->setup();
-		$this->consumerKey = Config::inst()->get('SSTwitter', 'CONSUMER_KEY');
-		$this->consumerSecret = Config::inst()->get('SSTwitter', 'CONSUMER_SECRET');
+		$consumerKey = Config::inst()->get('SSTwitter', 'CONSUMER_KEY');
+		$consumerSecret = Config::inst()->get('SSTwitter', 'CONSUMER_SECRET');
 
 		$this->accessToken = Config::inst()->get('SSTwitter', 'OAUTH_TOKEN');
 		$this->accessSecret = Config::inst()->get('SSTwitter', 'OAUTH_SECRET');
 
-		TwitterObjectTest::setConsumerKey($this->consumerKey, $this->consumerSecret);
+		TwitterObjectTest::setConsumerKey($consumerKey, $consumerSecret);
 
-        	$this->assertEquals(TwitterObjectTest::getConsumerKey(), $this->consumerKey);
-        	$this->assertEquals(TwitterObjectTest::getConsumerSecret(), $this->consumerSecret);
+		$this->assertEquals(TwitterObjectTest::getConsumerKey(), $consumerKey);
+		$this->assertEquals(TwitterObjectTest::getConsumerSecret(), $consumerSecret);
 
 		$this->cb = \Codebird\Codebird::getInstance();
 		$this->cb->setToken($this->accessToken, $this->accessSecret);
