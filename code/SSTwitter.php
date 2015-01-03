@@ -84,4 +84,15 @@ class SSTwitter extends Object {
 		$tweets = $this->cb->statuses_userTimeline($params);
 		return $tweets;
 	} 
+
+	/**
+	 *
+	 * Send a tweet
+	 *
+	 * @param string $tweet The tweet to send
+	 */
+	public function sendTweet($tweet) {
+		$params['status'] = $tweet;
+		$reply = $this->cb->statuses_update($params);
+	}
 }

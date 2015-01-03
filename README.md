@@ -59,7 +59,7 @@ After:
 SSTwitter:
   CONSUMER_KEY: Your Twitter Consumer Key from Twitter dashboard
   CONSUMER_SECRET: Your Twitter Consumer Secret from Twitter dashboard
-  OAUTH_TOKEN: Your Twitter Oauth token from Twitter dashboard
+  OAUTH_TOKEN: Your Twitter OAuth token from Twitter dashboard
   OAUTH_SECRET: Your Twitter OAuth secret from Twitter dashboard
   TWITTER_SCREENNAME: Your Twitter screenname/username
 
@@ -74,6 +74,12 @@ To fetch Tweets Twitter you need to call the constructor and the method getTweet
 			// this example fetches the last tweet you may 
 			$tweets = (array)$twitter->getTweets(1);
 			$tweet = $tweets[0];
+```
+To send tweets the constructor needs to be called and the method sendTweet needs to be used as below
+
+```
+		$twitter = new SSTwitter();
+		$twitter->sendTweet('Your updated status');
 ```
 
 ## TODO ##
