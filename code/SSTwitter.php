@@ -92,7 +92,12 @@ class SSTwitter extends Object {
 	 * @param string $tweet The tweet to send
 	 */
 	public function sendTweet($tweet) {
-		$params['status'] = $tweet;
+		if (is_array($tweet)) {
+			$params = $tweet;
+		} else {
+			$params['status'] = $tweet;
+		}
 		$reply = $this->cb->statuses_update($params);
+		return $reply;
 	}
 }
