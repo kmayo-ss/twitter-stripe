@@ -34,7 +34,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 * Connects to Twitter API 1.1 via OAuth
 * Fetches tweets for a user timeline
 
-## Installation
+## Composer Installation
+
+  composer require kmayo-ss/twitter-stripe
+  
+## Installation Manual
 
  1. Download the module form GitHub (Composer support to be added)
  2. Extract the file (if you are on windows try 7-zip for extracting tar.gz files
