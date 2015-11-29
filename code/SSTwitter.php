@@ -100,4 +100,14 @@ class SSTwitter extends Object {
 		$reply = $this->cb->statuses_update($params);
 		return $reply;
 	}
+
+	/**
+	 *
+	 * Search for something on Twitter
+	 *
+	 * @param string $search The query you want to search for
+	 */
+	public function search($search) {
+		return $this->cb->search_tweets("q=$search", true);
+	}
 }
